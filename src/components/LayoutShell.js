@@ -32,7 +32,7 @@ export default function LayoutShell({ children }) {
       <main className="pt-14! pb-20 relative! min-h-screen">{children}</main>
 
       {/* Footer */}
-      <BottomNav />
+        <BottomNav />
     </div>
   );
 }
