@@ -7,15 +7,9 @@ export default function LayoutShell({ children }) {
 
   useEffect(() => {
     const onScroll = () => {
-      const currentScroll = window.scrollY;
-
-      if (currentScroll < lastScroll) {
-        setShowFooter(true);   // اسکرول به بالا
-      } else {
-        setShowFooter(false);  // اسکرول به پایین
-      }
-
-      setLastScroll(currentScroll);
+      const current = window.scrollY;
+      setShowFooter(current < lastScroll);
+      setLastScroll(current);
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -28,9 +22,11 @@ export default function LayoutShell({ children }) {
       <header
         className="
           fixed top-0 left-0 right-0 z-50
-          h-14 bg-white
-          border-b border-border
-          flex items-center px-4
+          h-14 px-4
+          flex items-center
+          backdrop-blur-md
+          bg-primary/20
+          border-b border-white/20
         "
       >
         <h1 className="text-sm font-medium">نِکتا</h1>
@@ -53,9 +49,11 @@ export default function LayoutShell({ children }) {
       >
         <div
           className="
-            h-16 bg-white
-            border-t border-border
+            h-16
             flex items-center justify-around
+            backdrop-blur-md
+            bg-primary/20
+            border-t border-white/20
           "
         >
           <button className="text-sm font-medium text-primary">
