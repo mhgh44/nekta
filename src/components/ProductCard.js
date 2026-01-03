@@ -9,7 +9,7 @@ export default function ProductCard({ name, price }) {
         🍹
       </div>
 
-      <h3 className="mt-2 text-sm font-medium text-text line-clamp-2">
+      <h3 className="mt-2! text-sm font-medium text-text line-clamp-2">
         {name}
       </h3>
 

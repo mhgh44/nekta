@@ -10,9 +10,6 @@ export default {
         border: "#E5E7EB",
         bg: "#F9FAFB",
       },
-      fontFamily: {
-        sans: ["var(--font-pinar)", "system-ui"],
-      },
     },
   },
 };

@@ -5,7 +5,7 @@
 /* Pinar Font */
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-LIGHT.woff2") format("truetype");
+  src: url("../../public/fonts/PINAR-FD-LIGHT.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -13,7 +13,7 @@
 
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-REGULAR.woff2") format("truetype");
+  src: url("../../public/fonts/PINAR-FD-REGULAR.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-MEDIUM.woff2") format("truetype");
+  src: url("../../public/fonts/PINAR-FD-MEDIUM.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -29,7 +29,7 @@
 
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-BOLD.woff2") format("truetype");
+  src: url("../../public/fonts/PINAR-FD-BOLD.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -37,7 +37,7 @@
 
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-EXTRABOLD.woff2") format("truetype");
+  src: url("../../public/fonts/PINAR-FD-EXTRABOLD.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -46,10 +46,16 @@
 @theme inline {
   --color-primary: #5b1d7a;
   --color-bg: #F9FAFB;
+  --color-text: #1F2937;
 }
 
 body {
   font-family: "Pinar", sans-serif;
+}
+
+h1 {
+  font-family: "Pinar", sans-serif;
+  font-weight: 800;
 }
 
 /* :root {
