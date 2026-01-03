@@ -10,34 +10,34 @@ export default function LayoutShell({ children }) {
       const currentScroll = window.scrollY;
 
       if (currentScroll < lastScroll) {
-        // اسکرول به بالا
-        setShowFooter(true);
+        setShowFooter(true);   // اسکرول به بالا
       } else {
-        // اسکرول به پایین
-        setShowFooter(false);
+        setShowFooter(false);  // اسکرول به پایین
       }
 
       setLastScroll(currentScroll);
     };
 
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, [lastScroll]);
 
   return (
-    <>
+    <div className="min-h-screen bg-bg text-text">
       {/* Header */}
-      <header className="
-        fixed top-0 left-0 right-0 z-50
-        h-14 bg-white
-        border-b border-border
-        flex items-center px-4
-      ">
+      <header
+        className="
+          fixed top-0 left-0 right-0 z-50
+          h-14 bg-white
+          border-b border-border
+          flex items-center px-4
+        "
+      >
         <h1 className="text-sm font-medium">نِکتا</h1>
       </header>
 
       {/* Content */}
-      <main className="pt-14 pb-20">
+      <main className="pt-14 pb-20 min-h-screen">
         {children}
       </main>
 
@@ -51,11 +51,13 @@ export default function LayoutShell({ children }) {
             : "translate-y-20 opacity-0"}
         `}
       >
-        <div className="
-          h-16 bg-white
-          border-t border-border
-          flex items-center justify-around
-        ">
+        <div
+          className="
+            h-16 bg-white
+            border-t border-border
+            flex items-center justify-around
+          "
+        >
           <button className="text-sm font-medium text-primary">
             منو
           </button>
@@ -67,6 +69,6 @@ export default function LayoutShell({ children }) {
           </button>
         </div>
       </footer>
-    </>
+    </div>
   );
 }
