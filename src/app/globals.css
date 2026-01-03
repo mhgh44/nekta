@@ -2,11 +2,10 @@
 @import "tailwindcss/preflight";
 @tailwind utilities;
 
-
 /* Pinar Font */
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-LIGHT.TTF") format("truetype");
+  src: url("/fonts/pinar/PINAR-FD-LIGHT.woff2") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -14,7 +13,7 @@
 
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-REGULAR.TTF") format("truetype");
+  src: url("/fonts/pinar/PINAR-FD-REGULAR.woff2") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -22,7 +21,7 @@
 
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-MEDIUM.TTF") format("truetype");
+  src: url("/fonts/pinar/PINAR-FD-MEDIUM.woff2") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -30,7 +29,7 @@
 
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-BOLD.TTF") format("truetype");
+  src: url("/fonts/pinar/PINAR-FD-BOLD.woff2") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -38,19 +37,24 @@
 
 @font-face {
   font-family: "Pinar";
-  src: url("/fonts/pinar/PINAR-FD-EXTRABOLD.TTF") format("truetype");
+  src: url("/fonts/pinar/PINAR-FD-EXTRABOLD.woff2") format("truetype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 
+@theme inline {
+  --color-primary: #5b1d7a;
+  --color-bg: #F9FAFB;
+}
+
 body {
-    font-family: "Pinar", sans-serif;
+  font-family: "Pinar", sans-serif;
 }
 
 /* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+   --background: #ffffff; 
+   --foreground: #171717; 
 } */
 
 /* @theme inline {
