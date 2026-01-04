@@ -1,46 +1,46 @@
 "use client";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Home, List, ShoppingCart } from "lucide-react";
+import Link from "next/link";
 
-export default function BottomNav() {
+export default function Footer({ showFooter }) {
   const pathname = usePathname();
 
   const navItems = [
     { label: "خانه", icon: Home, path: "/" },
     { label: "منو", icon: List, path: "/menu" },
-    { label: "سفارش", icon: ShoppingCart, path: "/order" },
+    { label: "سفارش‌ها", icon: ShoppingCart, path: "/order" },
   ];
 
   return (
-    <nav className="
-      fixed bottom-0 left-1/2 -translate-x-1/2
-      w-full max-w-md
-      bg-white border-t
-      flex justify-around items-center
-      py-3
-    ">
-      {navItems.map((item) => {
-        const Icon = item.icon;
-        const isActive = pathname === item.path;
+    <footer
+      className={`fixed bottom-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+        showFooter ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+      }`}
+    >
+      <div className="h-16 flex items-center justify-around backdrop-blur-xs bg-primary/10 border-t border-white/20">
+        {navItems.map((item) => {
+          const Icon = item.icon;
+          const isActive = pathname === item.path;
 
-        return (
-          <Link
-            key={item.label}
-            href={item.path}
-            className="flex flex-col items-center text-sm font-medium"
-          >
-            <Icon
-              className={`w-5 h-5 mb-1 transition-colors duration-200 ${
-                isActive ? "text-primary" : "text-muted"
-              }`}
-            />
-            <span className={`${isActive ? "text-primary" : "text-muted"}`}>
-              {item.label}
-            </span>
-          </Link>
-        );
-      })}
-    </nav>
+          return (
+            <Link
+              key={item.label}
+              href={item.path}
+              className="flex flex-col items-center justify-center text-sm font-medium"
+            >
+              <Icon
+                className={`w-6 h-6 mb-1 transition-colors duration-200 ${
+                  isActive ? "text-primary" : "text-muted"
+                }`}
+              />
+              <span className={`${isActive ? "text-primary" : "text-muted"}`}>
+                {item.label}
+              </span>
+            </Link>
+          );
+        })}
+      </div>
+    </footer>
   );
 }

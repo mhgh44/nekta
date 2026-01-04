@@ -13,6 +13,7 @@ export default function MenuPage() {
             key={p.id}
             name={p.name}
             price={p.price}
+            image={p.image}
           />
         ))}
       </main>

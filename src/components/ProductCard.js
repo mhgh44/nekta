@@ -1,26 +1,43 @@
-export default function ProductCard({ name, price }) {
+export default function ProductCard({ name, price, image }) {
   return (
     <div className="
-      bg-white rounded-2xl
-      p-3 shadow-sm
+      bg-white rounded-2xl shadow-lg
+      overflow-hidden
       flex flex-col
+      hover:shadow-2xl transition-shadow duration-200
     ">
-      <div className="h-24 bg-bg rounded-xl flex items-center justify-center">
-        🍹
+      {/* تصویر محصول */}
+      <div className="w-full h-40 bg-gray-100 flex items-center justify-center overflow-hidden">
+        <img 
+          src={image} 
+          alt={name}
+          className="object-cover w-full h-full"
+        />
       </div>
 
-      <h3 className="mt-2! text-sm font-medium text-text line-clamp-2">
+      {/* نام محصول */}
+      <h3 className="mt-3 px-3 text-base font-semibold text-text line-clamp-2">
         {name}
       </h3>
 
-      <div className="mt-auto flex items-center justify-between">
-        <span className="text-xs text-muted">
-          {price.toLocaleString()} تومان
-        </span>
+      {/* قیمت + دکمه */}
+      <div className="mt-auto px-3 py-2 flex items-center justify-between">
+        <div className="flex items-center gap-1 text-sm font-medium text-primary">
+          {/* آیکون تومان */}
+          <img
+            src="/icons/toman.png"
+            alt="تومان"
+            className="w-4 h-4"
+          />
+          <span>{price.toLocaleString()}</span>
+        </div>
+
         <button className="
           bg-primary text-white
           px-3 py-1.5
-          rounded-full text-xs
+          rounded-full text-sm
+          hover:bg-primary/90
+          transition-colors duration-200
         ">
           افزودن
         </button>
