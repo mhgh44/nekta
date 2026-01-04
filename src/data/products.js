@@ -1,170 +1,146 @@
 export const products = [
   {
     id: 1,
-    name: "آب پرتقال طبیعی",
+    name: "آب پرتقال یک لیتری",
     price: 45000,
-    image:
-      "https://images.unsplash.com/photo-1585518419759-107b96d4467b?w=300&h=300&fit=crop",
+    image: "https://monasebtarinha.ir/wp-content/uploads/2024/09/اب-پرتقال-یک-لیتری-150x150.webp",
   },
   {
     id: 2,
-    name: "اسموتی موز و توت‌فرنگی",
+    name: "اسموتی موز و توت‌فرنگی 400 سی سی",
     price: 65000,
-    image:
-      "https://images.unsplash.com/photo-1563805042-7684a76d0aaf?w=300&h=300&fit=crop",
+    image: "https://iranfreshjuice.ir/wp-content/uploads/2023/12/%D8%A7%D8%B3%D9%85%D9%88%D8%AA%DB%8C-%D8%AA%D9%88%D8%AA-%D9%81%D8%B1%D9%86%DA%AF%DB%8C-%D9%88-%D9%85%D9%88%D8%B2.jpg",
   },
   {
     id: 3,
-    name: "آب سیب تازه",
+    name: "میلک شیک شکلات 400 سی سی",
     price: 50000,
-    image:
-      "https://images.unsplash.com/photo-1571047399553-35ac3651d3a4?w=300&h=300&fit=crop",
+    image: "	https://cdn.snappfood.ir/641x641/cdn/29/02/65/vendor/65c252e03428a.jpeg",
   },
   {
     id: 4,
-    name: "آب انار",
+    name: "آب انار یک لیتری",
     price: 55000,
-    image:
-      "https://images.unsplash.com/photo-1571869847555-0ff5cdb0b8e6?w=300&h=300&fit=crop",
+    image: "https://files.namnak.com/users/nh/aup/202104/1131_pics/%D8%A2%D8%A8-%D8%A7%D9%86%D8%A7%D8%B1-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%A7%D8%B3%D9%87%D8%A7%D9%84.webp",
   },
   {
     id: 5,
-    name: "آب لیمو تازه",
+    name: "اسموتی توت فرنگی 400 سی سی",
     price: 40000,
-    image:
-      "https://images.unsplash.com/photo-1572448862528-a889fb7f163d?w=300&h=300&fit=crop",
+    image: "https://cdn.asriran.com/files/fa/news/1400/2/25/1213598_559.jpg",
   },
   {
     id: 6,
-    name: "اسموتی آووکادو و کیوی",
+    name: "اسموتی آووکادو و کیوی 400 سی سی",
     price: 70000,
-    image:
-      "https://images.unsplash.com/photo-1541123353848-a68c79d80951?w=300&h=300&fit=crop",
+    image: "https://www.724press.com/images/article/1396/03/29/Green-Smoothie-with-Avocado-Kiwi-and-Cucumber.jpg?i=534",
   },
   {
     id: 7,
-    name: "آب هندوانه",
+    name: "آب هندوانه یک لیتری",
     price: 35000,
-    image:
-      "https://images.unsplash.com/photo-1598514982326-fc58a20e359a?w=300&h=300&fit=crop",
+    image: "https://iranipokht.ir/wp-content/uploads/2025/04/how-to-prepare-watermelon-juice-with-rose-water-logo.jpg",
   },
   {
     id: 8,
-    name: "اسموتی توت‌فرنگی و دارچین",
+    name: "میلک شیک نوتلا 400 سی سی",
     price: 68000,
-    image:
-      "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=300&h=300&fit=crop",
+    image: "	https://cdn.snappfood.ir/641x641/cdn/29/02/65/vendor/65c2530692d66.jpeg",
   },
   {
     id: 9,
-    name: "آب نارنگی",
+    name: "آب نارنگی یک لیتری",
     price: 48000,
-    image:
-      "https://images.unsplash.com/photo-1584270354949-8e263e7edb22?w=300&h=300&fit=crop",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpflCbFAwL5uIlm6B8lzHFrFGIWeeFGKfHSQ&s",
   },
   {
     id: 10,
-    name: "اسموتی مانگو و نارگیل",
+    name: "اسموتی انبه و نارگیل 400 سی سی",
     price: 75000,
-    image:
-      "https://images.unsplash.com/photo-1593650042029-83ff7a3b85d8?w=300&h=300&fit=crop",
+    image: "https://alis.ir/wp-content/uploads/2025/11/626262-1.jpg",
   },
   {
     id: 11,
-    name: "آب انبه",
+    name: "آب انبه یک لیتری",
     price: 60000,
-    image:
-      "https://images.unsplash.com/photo-1584466977775-0c6dfa1bb6c8?w=300&h=300&fit=crop",
+    image: "https://rahmanionline.com/wp-content/uploads/2022/12/%D8%A2%D8%A8-%D8%A7%D9%86%D8%A8%D9%87-100-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B7%D8%A8%DB%8C%D8%B9%DB%8C-%DA%A9%D8%A7%D8%B1%DB%8C%D8%B2-200-%D8%B3%DB%8C-%D8%B3%DB%8C-%D8%B4%DB%8C%D8%B4%D9%87.png",
   },
   {
     id: 12,
-    name: "اسموتی پاپایا و انار",
+    name: "اسموتی پاپایا و انار 400 سی سی",
     price: 72000,
-    image:
-      "https://images.unsplash.com/photo-1589927986089-35812386ee55?w=300&h=300&fit=crop",
+    image: "https://i2.delgarm.com/i2/811/031001/676648e05eaf8.jpeg",
   },
   {
     id: 13,
-    name: "آب شلتوک",
+    name: "تخم شربتی زعفرانی یک لیتری",
     price: 52000,
-    image:
-      "https://images.unsplash.com/photo-1542736667-069246bdbc30?w=300&h=300&fit=crop",
+    image: "https://cdn.snappfood.ir/641x641/cdn/29/02/65/vendor/65c25221026d8.jpeg",
   },
   {
     id: 14,
-    name: "اسموتی توت‌سیاه و موز",
+    name: "اسموتی توت‌سیاه و موز 400 سی سی",
     price: 70000,
-    image:
-      "https://images.unsplash.com/photo-1528825871115-3581a5387919?w=300&h=300&fit=crop",
+    image: "https://img-global.cpcdn.com/recipes/73a6b7cd5428064e/680x781cq80/%D8%A7%D8%B3%D9%85%D9%88%D8%AA%DB%8C-%D9%85%D9%88%D8%B2-%D8%AA%D9%88%D8%AA-%D8%B3%DB%8C%D8%A7%D9%87-%D8%AF%D8%B3%D8%AA%D9%88%D8%B1-%D8%A7%D8%B5%D9%84%DB%8C-%D8%B9%DA%A9%D8%B3.jpg",
   },
   {
     id: 15,
-    name: "آب زغال‌اخته",
+    name: "آب زغال‌اخته یک لیتری",
     price: 58000,
-    image:
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=300&h=300&fit=crop",
+    image: "https://sitak.ir/wp-content/uploads/2018/03/%DA%A9%D9%88%DA%A9%D8%AA%D9%84-%D8%AA%D9%85%D8%B4%DA%A9-%D8%AA%D8%B1%D8%B4.jpg",
   },
   {
     id: 16,
-    name: "اسموتی سبز سلامت",
+    name: "شیر موز سلامت 400 سی سی",
     price: 80000,
-    image:
-      "https://images.unsplash.com/photo-1556912993-6f019f1eaf85?w=300&h=300&fit=crop",
+    image: "https://alis.ir/wp-content/uploads/2020/07/24x683.jpg",
   },
   {
     id: 17,
-    name: "آب خیار و لیمو",
+    name: "شربت خیار سکنجبین یک لیتری",
     price: 42000,
-    image:
-      "https://images.unsplash.com/photo-1586864526019-6b7b6758f72e?w=300&h=300&fit=crop",
+    image: "https://cdn.snappfood.ir/641x641/cdn/29/02/65/vendor/65c25239db85d.jpeg",
   },
   {
     id: 18,
-    name: "اسموتی گردو و شیر",
+    name: "اسموتی گردو و شیر 400 سی سی",
     price: 76000,
-    image:
-      "https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=300&h=300&fit=crop",
+    image: "https://raoufnuts.co/blog/wp-content/uploads/2024/09/%D8%B7%D8%B1%D8%B2-%D8%AA%D9%87%DB%8C%D9%87-%D8%A7%D8%B3%D9%85%D9%88%D8%AA%DB%8C-%D9%85%D9%82%D9%88%DB%8C-%D8%A8%D8%A7-%D8%A2%D8%AC%DB%8C%D9%84-%D9%88-%D8%AE%D8%B4%DA%A9%D8%A8%D8%A7%D8%B1.jpg",
   },
   {
     id: 19,
-    name: "آب زنجبیل و عسل",
+    name: "آب هویج یک لیتری",
     price: 55000,
-    image:
-      "https://images.unsplash.com/photo-1583511655826-ef8bd7f1711e?w=300&h=300&fit=crop",
+    image: "https://cdn.snappfood.ir/641x641/cdn/29/02/65/vendor/65be56bcf3450.jpeg",
   },
   {
     id: 20,
-    name: "اسموتی کاکائو و فندق",
+    name: "اسموتی کاکائو و فندق 400 سی سی",
     price: 72000,
-    image:
-      "https://images.unsplash.com/photo-1600185361189-24d65b84a887?w=300&h=300&fit=crop",
+    image: "https://alis.ir/wp-content/uploads/2022/02/smoothies-4-3.jpg",
   },
   {
     id: 21,
-    name: "آب لیموترش",
+    name: "شربت لیموترش یک لیتری",
     price: 38000,
-    image:
-      "https://images.unsplash.com/photo-1506806732259-39c2d0268443?w=300&h=300&fit=crop",
+    image: "https://cdn.asriran.com/files/fa/news/1402/5/15/1614313_113.jpg",
   },
   {
     id: 22,
-    name: "اسموتی نارگیل و آناناس",
+    name: "اسموتی نارگیل و آناناس 400 سی سی",
     price: 74000,
-    image:
-      "https://images.unsplash.com/photo-1598514982326-fc58a20e359a?w=300&h=300&fit=crop",
+    image: "https://rahmanionline.com/wp-content/uploads/2024/04/Pineapple-Coconut-Banana-Apple-kariz-%D8%A7%D8%B3%D9%85%D9%88%D8%AA%DB%8C-%DA%A9%D8%A7%D8%B1%DB%8C%D8%B2-%D8%A2%D9%86%D8%A7%D9%86%D8%A7%D8%B3%D8%8C-%D9%86%D8%A7%D8%B1%DA%AF%DB%8C%D9%84%D8%8C-%D9%85%D9%88%D8%B2%D8%8C%D8%B3%DB%8C%D8%A8.png",
   },
   {
     id: 23,
-    name: "آب سیب سبز",
+    name: "آب سیب سبز یک لیتری",
     price: 50000,
-    image:
-      "https://images.unsplash.com/photo-1560807707-8cc77767d783?w=300&h=300&fit=crop",
+    image: "https://monasebtarinha.ir/wp-content/uploads/2024/08/%D8%A2%D8%A8-%D8%B3%DB%8C%D8%A8-%DA%A9%D8%B1%D9%81%D8%B3.webp",
   },
   {
     id: 24,
-    name: "اسموتی انار و رمان",
+    name: "اسموتی انار و رمان 400 سی سی",
     price: 78000,
-    image:
-      "https://images.unsplash.com/photo-1572556294868-bcb61420d5a4?w=300&h=300&fit=crop",
+    image: "https://blog.okala.com/wp-content/uploads/2024/01/Pomegranate-smoothie-min-1.jpg",
   },
 ];

@@ -29,12 +29,30 @@ export default function Footer({ showFooter }) {
               href={item.path}
               className="flex flex-col items-center justify-center text-sm font-medium"
             >
+              {/* Icon */}
               <Icon
-                className={`w-6 h-6 mb-1 transition-colors duration-200 ${
-                  isActive ? "text-primary" : "text-muted"
-                }`}
+                className={`
+                  w-6 h-6 mb-1
+                  transition-all duration-300
+                  ${
+                    isActive
+                      ? "text-primary drop-shadow-[0_0_18px_rgba(255,255,255,0.9)]!"
+                      : "text-muted drop-shadow-[0_6px_6px_rgba(255,255,255,0.4)]!"
+                  }
+                `}
               />
-              <span className={`${isActive ? "text-primary" : "text-muted"}`}>
+
+              {/* Label */}
+              <span
+                className={`
+                  transition-all duration-300
+                  ${
+                    isActive
+                      ? "text-primary drop-shadow-[0_0_18px_rgba(255,255,255,0.9)]!"
+                      : "text-muted drop-shadow-[0_6px_6px_rgba(255,255,255,0.4)]!"
+                  }
+                `}
+              >
                 {item.label}
               </span>
             </Link>
