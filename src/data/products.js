@@ -62,13 +62,13 @@ export const products = [
   {
     id: 11,
     name: "آب انبه یک لیتری",
-    price: 60000,
+    price: 240000,
     image: "https://rahmanionline.com/wp-content/uploads/2022/12/%D8%A2%D8%A8-%D8%A7%D9%86%D8%A8%D9%87-100-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B7%D8%A8%DB%8C%D8%B9%DB%8C-%DA%A9%D8%A7%D8%B1%DB%8C%D8%B2-200-%D8%B3%DB%8C-%D8%B3%DB%8C-%D8%B4%DB%8C%D8%B4%D9%87.png",
   },
   {
     id: 12,
     name: "اسموتی پاپایا و انار 400 سی سی",
-    price: 72000,
+    price: 360000,
     image: "https://i2.delgarm.com/i2/811/031001/676648e05eaf8.jpeg",
   },
   {

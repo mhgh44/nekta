@@ -7,8 +7,8 @@ export default function Footer({ showFooter }) {
   const pathname = usePathname();
 
   const navItems = [
-    { label: "خانه", icon: Home, path: "/" },
     { label: "منو", icon: List, path: "/menu" },
+    { label: "خانه", icon: Home, path: "/" },
     { label: "سفارش‌ها", icon: ShoppingCart, path: "/order" },
   ];
 
@@ -27,31 +27,28 @@ export default function Footer({ showFooter }) {
             <Link
               key={item.label}
               href={item.path}
-              className="flex flex-col items-center justify-center text-sm font-medium"
+              className="flex flex-col items-center justify-center text-sm font-medium min-w-14"
             >
-              {/* Icon */}
               <Icon
                 className={`
-                  w-6 h-6 mb-1
-                  transition-all duration-300
-                  ${
-                    isActive
-                      ? "text-primary drop-shadow-[0_0_18px_rgba(255,255,255,0.9)]!"
-                      : "text-muted drop-shadow-[0_6px_6px_rgba(255,255,255,0.4)]!"
-                  }
-                `}
+    w-6 h-6 mb-1!
+    transition-all duration-200
+    ${
+      isActive
+        ? "text-[#8426f7]!     drop-shadow(1px 1px 3px rgba(255, 255, 255 ,1))"
+        : "text-shadow-transparent! inactive-glow"
+    }
+  `}
               />
-
-              {/* Label */}
               <span
                 className={`
-                  transition-all duration-300
-                  ${
-                    isActive
-                      ? "text-primary drop-shadow-[0_0_18px_rgba(255,255,255,0.9)]!"
-                      : "text-muted drop-shadow-[0_6px_6px_rgba(255,255,255,0.4)]!"
-                  }
-                `}
+    transition-all duration-200
+    ${
+      isActive
+        ? "  text-[#8426f7]!    drop-shadow(1px 1px 2px rgba(255, 255, 255 ,1))"
+        : " inactive-glow text-shadow-transparent!"
+    }
+  `}
               >
                 {item.label}
               </span>
